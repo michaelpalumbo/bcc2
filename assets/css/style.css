@@ -32,10 +32,20 @@ header {
     color: #ffffff;
 }
 
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 header h1 {
     margin-left: 20px;
 
 }
+/* nav {
+    display: flex;
+    background-color: #d8a47f;
+  } */
 
 a {
     color: #ffffff;
@@ -58,7 +68,6 @@ footer {
     height: 100%;
     width: 100%;
     margin-bottom: 20px;
-    /* background-image: url("../images/digital-marketing-meeting.jpg"); */
     background-size: cover;
     background-position: center;
 }
@@ -66,31 +75,20 @@ footer {
 .hero img {
     margin-top: 20px;
     display: inline-block;
-    /* overflow: hidden; */
     width: 20%;
     height: auto;
     margin-left: 20px;
-    /* float: left; */
-
 }
 
 .hero .paimei {
-    /* position: absolute; */
-
     margin-top: 20px;
     height: 100%;
-    /* width:auto; */
-    /* float: left; */
-    /* width: 80%; */
 }
 .contact {
     margin-left: 20px;
     
 }
 
-.contact a {
-    text: black;
-}
 /* root-level classes */
 .float-left {
     float: left;
@@ -103,12 +101,14 @@ footer {
 }
 
 .content {
-    width: 75%;
+    flex: 1;
+    width: 25%;
     display: inline-block;
     margin-left: 20px;
 }
 
 .content section {
+    float: left;
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -117,23 +117,24 @@ footer {
     color: #ffffff;
 }
 
-/* .content section div {
-    
-} */
-
 .content section div img {
     float: left;
+    max-width:65%
 }
 
-.benefits {
-    margin-right: 20px;
+.content .myCode {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0 0 400px;
+}
+.content .myCode header {
     padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
-    background-color: #2589bd;
+}
+
+.content .myCode img {
+    width: 100%;
 }
 
 /* headings */
@@ -144,13 +145,8 @@ header h1 {
     font-size: 48px;
 }
 
-header h1 .seo {
-    color: #d9dcd6;
-}
-
 /* h2 */
 .content h2 {
-    /* max-width: auto; */
     margin-bottom: 20px;
     font-size: 36px;
 }
@@ -159,11 +155,7 @@ footer h2 {
     font-size: 20px;
 }
 
-/* h3 */
-.benefits h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
+
 
 /* divs */
 header div {
@@ -185,22 +177,15 @@ header div ul li {
     margin-left: 25px;
 }
 
-.benefits div {
-    margin-bottom: 32px;
-    color: #ffffff;
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
 }
 
-/* images */
-.content img {
-    max-height: 200px;
+@media screen and (max-width: 768px) {
+  body, header {
+    flex-direction: column;
+  }
 }
-
-.benefits img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-
-
-
