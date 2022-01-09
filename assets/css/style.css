@@ -16,6 +16,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    /* background-color: rgba(0, 217, 255, 0.221) */
 }
 /* Semantic Elements */
 body {
@@ -23,10 +24,17 @@ body {
 }
 
 header {
-    padding: 20px;
+    
+
+    /* padding: 20px; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+}
+
+header h1 {
+    margin-left: 20px;
+
 }
 
 a {
@@ -47,14 +55,42 @@ footer {
 
 /* hero  */
 .hero {
-    height: 800px;
+    height: 100%;
     width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
+    margin-bottom: 20px;
+    /* background-image: url("../images/digital-marketing-meeting.jpg"); */
     background-size: cover;
     background-position: center;
 }
 
+.hero img {
+    margin-top: 20px;
+    display: inline-block;
+    /* overflow: hidden; */
+    width: 20%;
+    height: auto;
+    margin-left: 20px;
+    /* float: left; */
+
+}
+
+.hero .paimei {
+    /* position: absolute; */
+
+    margin-top: 20px;
+    height: 100%;
+    /* width:auto; */
+    /* float: left; */
+    /* width: 80%; */
+}
+.contact {
+    margin-left: 20px;
+    
+}
+
+.contact a {
+    text: black;
+}
 /* root-level classes */
 .float-left {
     float: left;
@@ -79,6 +115,14 @@ footer {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
     background-color: #0072bb;
     color: #ffffff;
+}
+
+/* .content section div {
+    
+} */
+
+.content section div img {
+    float: left;
 }
 
 .benefits {
@@ -106,6 +150,7 @@ header h1 .seo {
 
 /* h2 */
 .content h2 {
+    /* max-width: auto; */
     margin-bottom: 20px;
     font-size: 36px;
 }
